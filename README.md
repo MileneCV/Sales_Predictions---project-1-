@@ -37,11 +37,9 @@ Predictions part
 
 ## Results
 
-### Here are examples of how to embed images from your sub-folder
 
-
-#### Visual 1 Title
-![sample image](project1_sample_image.png)
+#### Distribution of sales by location
+![sales_predictions](Picture1.png)
 
 > Sentence about visualization.
 #### Visual 2 Title
