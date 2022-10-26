@@ -11,11 +11,13 @@ This project is a sales prediction for food item sold at various stores. The pri
 ### Data:
 Original data source is from https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/
 
+![image-in-readme](Picture1.png)
 
 
 
 ## Methods
 - Data preparation steps with explanation and justification for choices
+
 - 
 
 ## Results
