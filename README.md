@@ -38,20 +38,25 @@ Predictions part
 ## Results
 
 
-#### Distribution of sales by location
-![sales_predictions](Picture1.png)
+#### Distribution of sales by outlet
+![sales_predictions](download.png)
 
-> Sentence about visualization.
-#### Visual 2 Title
+> The outlet OUT027, wich is a supermarket type 3, has better sales than others outlet. Supermarkets type 1 and 2 have similar sales and grocery stores OUT010, OUT019 have lower sales.
+
+
 
 ## Recommendations:
 
-More of your own text here
+With linear regression model the R2 score in training dataset was 56%, with decision tree model was 11% and with random forest tunned the score was 60%.
+
+These scores can be interpreted as saying that linear regression model can account for about 56% of the variation in y_test using the features in X_test and random forest model 60%.
+
+The MSE was lower with random forest regression but was too far from the mean target and any model had a score higher than 60%. I don't think these 3 models of  predictions are good in this dataset.
 
 
 ## Limitations & Next Steps
 
-More of your own text here
+We need repeat this prediction with more features, the machine needs more data to learn and do a good prediction. Maybe we can inprove the score with more cmplex model. 
 
 
-### For further information
+
