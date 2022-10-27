@@ -56,7 +56,7 @@ The MSE was lower with random forest regression but was too far from the mean ta
 
 ## Limitations & Next Steps
 
-We need repeat this prediction with more features, the machine needs more data to learn and do a good prediction. Maybe we can inprove the score with more cmplex model. 
+We need repeat this prediction with more features, the machine needs more data to learn and do a good prediction. Maybe we can improve the score with more complex model. 
 
 
 
