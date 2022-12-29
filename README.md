@@ -3,6 +3,8 @@
 
 **Author**: Milene Carmes Vallejo 
 
+![sales_predictions](market.jpg)
+
 ### Business problem:
 
 It is a sales prediction for food sold in various stores.
