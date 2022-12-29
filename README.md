@@ -45,6 +45,12 @@ Predictions part
 > Fruits, vegetables and snack foods are the top selling item with more than ₹2,500,00 in sales.
 
 
+#### Which outlet type has better sales?
+![sales_predictions](type.png)
+
+Supermarket Type1 has higher total sales.
+
+
 ## Recommendations:
 
 With linear regression model the R2 score in training dataset was 56%, with decision tree model was 11% and with random forest tunned the score was 60%.
