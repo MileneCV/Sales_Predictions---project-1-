@@ -44,20 +44,36 @@ Predictions part
 
 > Fruits, vegetables and snack foods are the top selling item with more than ₹2,500,00 in sales.
 
-
 #### Which outlet type has better sales?
 ![sales_predictions](type.png)
 
 Supermarket Type1 has higher total sales.
 
+#### Does the year in which store was established is related with better sales?
+![sales_predictions](year.png)
+
+The year in which stores were established is not related to better sales.  We have Supermarket Type 1 established in 1987-2007 and there is no difference in sales.
+
 
 ## Recommendations:
 
-With linear regression model the R2 score in training dataset was 56%, with decision tree model was 11% and with random forest tunned the score was 60%.
+Compare the performance of models based on R2:
+With the linear regression model, the R2 score in the training dataset was 56%, with the decision tree and random forest model after tenning were 60%.
 
-These scores can be interpreted as saying that linear regression model can account for about 56% of the variation in y_test using the features in X_test and random forest model 60%.
+These scores can be interpreted as saying that the linear regression model can account for about 56% of the variation in y_test using the features in X_test. The decision tree and random forest model can account for about 60% .
 
-The MSE was lower with random forest regression but was too far from the mean target and any model had a score higher than 60%. I don't think these 3 models of  predictions are good in this dataset.
+Compare the performance of models based on MSE:
+A lower MSE is better as we want to reduce the size of errors, especially large errors!
+
+The mean of the target is 2095.231046 and if we check MSE in all models were:
+
+1 -linear regression was MSE: 1,198,492.82,
+
+2 - decision tree regressor was 1,057.44
+
+3 - random forest: 1,046.96
+
+The MSE was lower with random forest regression but was too far from the mean target and any model had a score higher than 60%. We need to repeat this prediction with more features, the machine needs more data to learn and do a good prediction. Maybe we can improve the score with a more complex model.
 
 
 ## Limitations & Next Steps
