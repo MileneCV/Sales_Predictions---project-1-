@@ -5,7 +5,7 @@
 
 ### Business problem:
 
-We are going to use a dataset from https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/. It is a sales prediction for food sold in various stores.
+It is a sales prediction for food sold in various stores.
 
 The goal of this project is to help the retailer better understand which products and what factors influence increasing sales (the price is in Indian Rupee)
 
@@ -39,11 +39,10 @@ Predictions part
 ## Results
 
 
-#### Distribution of sales by outlet
-![sales_predictions](download.png)
+#### Which Items generate the greatest amount of sales?
+![sales_predictions](ITEM.png)
 
-> The outlet OUT027, wich is a supermarket type 3, has better sales than others outlet. Supermarkets type 1 and 2 have similar sales and grocery stores OUT010, OUT019 have lower sales.
-
+> Fruits, vegetables and snack foods are the top selling item with more than ₹2,500,00 in sales.
 
 
 ## Recommendations:
