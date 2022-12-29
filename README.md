@@ -58,11 +58,14 @@ The year in which stores were established is not related to better sales.  We ha
 ## Recommendations:
 
 Compare the performance of models based on R2:
+
 With the linear regression model, the R2 score in the training dataset was 56%, with the decision tree and random forest model after tenning were 60%.
 
 These scores can be interpreted as saying that the linear regression model can account for about 56% of the variation in y_test using the features in X_test. The decision tree and random forest model can account for about 60% .
 
 Compare the performance of models based on MSE:
+
+
 A lower MSE is better as we want to reduce the size of errors, especially large errors!
 
 The mean of the target is 2095.231046 and if we check MSE in all models were:
