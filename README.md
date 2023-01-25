@@ -23,17 +23,20 @@ Here is the Data Dictionary for this dataset
 
 ## Methods
 
+#### Machine Learning part: 
 
-Predictions part
-- Data preparation: check duplicates, fix inconsistencies in Item_Fat_Content column, and check the type of all columns. 
+- Dropping unnecessary columns.
+- Data preparation: check duplicates, check inconsistencies values, check the type of all columns. 
 - Train/Test split: "Item_Outlet_Sales" column as the target.
-- Make selector columns because there are number and object columns in this dataset.
-- Check missing values: There are missing values in the numeric column Item_Weight which is a float number and there are missing values in the categorical column Outlet_Size. I used SimpleImputer the ‘mean’ strategy for numeric columns (that is a float number) and SimpleImputer the ‘most_frequent’ strategy for categorical columns.
-- I used OHE for categorical columns and scaler for numeric columns since in machine learning the dataset needs to be all numeric and in the same scale. 
-- I made a numeric_pipe and categorical_pipe with make_pipeline. 
-- I created tuples for numeric and categorical where the first element is the transformer and the second element is a ColumnSelector object
-- I used make_column_transform to put all together (numeric and categorical tuples)
-- I used 3 Models:  Linear regression, Decision Tree Regressor, and Randon Forest 
+- Make selector columns because there are numbers and objects columns in this dataset.
+- Check missing values: There are missing values in the numeric column Item_Weight which is a float number and there are missing values in the categorical column Outlet_Size. 
+- Used OHE for categorical columns. 
+- Made a numeric_pipe and categorical_pipe with make_pipeline. 
+- Created tuples for numeric and categorical where the first element is the transformer and the second element is a ColumnSelector object
+- Used make_column_transform to put all together (numeric and categorical tuples)
+- Used 3 Models:  Linear regression, Decision Tree Regressor, and Randon Forest 
+- Extracteand and plot the coefficients that Linear regression determined.
+- Extracteand and plot the feature importances that Decision Tree Regressor, and Randon Forest determined. 
 - Evaluated the performance of 3 models based on r^2 and used regression metrics (MAE, MSE, RMSE).
 - Compared 3 different models. 
 
@@ -57,6 +60,43 @@ Supermarket Type1 has higher total sales.
 The year in which stores were established is not related to better sales.  We have Supermarket Type 1 established in 1987-2007 and there is no difference in sales.
 
 
+### Coefficients with Linear regression
+
+![sales_predictions](top_10_coef.png)
+
+#### Interpreting Model's Coefficients
+
+#### Coefficients that Positively Influence the predicted sales:
+Outlet_Location_Type_Tier 3: Being in the Location_Type_Tier 3 increases the predicted sales by 578.079.
+
+Outlet_Identifier_OUT027: Being the Outlet # OUT027 increases the predicted sales by 578.079.
+
+Outlet_Size_Medium: Being the Outlet of medium size increases the predicted sales by 412.835.
+
+Outlet_Type_Supermarket Type1: Being the Outlet of Supermarket Type1 increases the predicted sales by 343.800.
+
+Item_Type_Seafood: Sell seafood increase the predicted sales by 308.889
+
+#### Coefficients that Negatively Influencethe the predicted sales:
+
+Outlet_Type_Grocery Store: Being a Grocery store subtracted 779.810 from the predicted sales.
+
+Outlet_Identifier_OUT019: Being the Outlet # OUT019 decreases the predicted sales by 452.442.
+
+Item_Visibility: low visibility decrease the predicted sales by 423.390.
+
+Outlet_Identifier_OUT010: Being the Outlet # OUT010 decreases the predicted sales by 327.368.
+
+Outlet_Establishment_Year_1998: if the store was established in 1998 decreases the predicted sales by 327.368
+
+
+### Features importance with Random forest
+
+![sales_predictions](top_10_rf_important_features.png)
+
+#### Interpreting feature importances
+
+Item_MRP (price), Outlet_Type_Grocery Store, Outlet_Identifier_OUT027, Outlet_Type_Supermarket Type3 and Outlet_Establishment_Year_1985 were the most important features used by our model. But we do not know the actual relationship between the feature and the target (Item_Outlest_Sales).
 ## Recommendations:
 
 Compare the performance of models based on R2:
