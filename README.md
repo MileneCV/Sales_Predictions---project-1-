@@ -106,20 +106,23 @@ Item_MRP (price), Outlet_Type_Grocery Store, Outlet_Identifier_OUT027, Outlet_Ty
 
 #### Interpreting SHAP - - Random Forest
 
-![sales_predictions](summary_barplot_rf.png)
+![sales_predictions](week_17_shap_bar.png)
 
-Compare the most important features according to SHAP vs. your original feature importances.
+##### Compare the most important features according to SHAP vs. your original feature importances.
+
 As we can see above, SHAP's importances is similar to the built-in random forest importances. Item_MRP (price), Outlet_Type_Grocery Store, Outlet_Identifier_OUT027, Outlet_Type_Supermarket Type3 and Outlet_Establishment_Year_1985 were the most important features used by our model.
 
-Like feature importance SHAP visualization is not indicating which direction the features push the prediction. Let's create dot plot type that will provide this information.
+Like feature importance SHAP visualization is not indicating which direction the features push the prediction. Let's create dot plot type that will provide this information..
 
-![sales_predictions](summary_plot_rf.png)
+![sales_predictions](week17_shap_dot.png)
 
-Item_MRP - if the price is high(red) increase sales, if is low (blue) decrease sales.
+Item_MRP - if the price is high(red) increase sales, if is low (blue) decrease sales. 
 
-Outlet_Type_Grocery Store - if it is a grocery store decrease sales.
+Outlet_Type_Grocery Store - if it is a grocery store decrease sales. 
 
-If the store is the # OUT027 or it is a supermarket Type3 or if was established in 1985 increase sales.
+If the store is the # OUT027 or it is a supermarket Type3  increase sales. 
+
+If it has lower year (blue) that means older outlet increase sales.
 
 
 ## Recommendations:
