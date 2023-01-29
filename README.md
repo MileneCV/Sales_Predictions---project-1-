@@ -125,6 +125,45 @@ If the store is the # OUT027 or it is a supermarket Type3  increase sales.
 If it has lower year (blue) that means older outlet increase sales.
 
 
+
+## Local Explanations
+## Force Plot - Linear Regression explanation
+
+![sales_predictions](week_17_force_plot_linreg.png)
+
+## Force Plot - Random Forest explanation
+![sales_predictions](week17_force_plot_rf.png)
+
+### Interpret what features most heavily influenced the predictions
+
+The red features push the prediction to a greater value (higher sales), while the blue features push the prediction to a lower value (lower sales).
+
+We can see if the outlet is supermarket type 3, was established in 1985 and is OUT027 these features push the prediction to a higher sales.
+
+The prediction with random forest was higher than with linear regression.
+
+## Lime tabular explanation - Linear Regression 
+
+### high sales
+![sales_predictions](week17_LIME_high_lnreg.jpg)
+
+### low sales
+![sales_predictions](week17_lime_low_lnreg.jpg)
+
+
+## Lime tabular explanation - Random Forest 
+
+### high sales
+![sales_predictions](week17_lime_high_rf.jpg)
+
+### low sales
+![sales_predictions](week17_lime_low_rf.jpg)
+
+### Interpret what features most heavily influenced the predictions, according to LIME.¶
+For high sales, we can see if the outlet is supermarket type 3, was established in 1985, is OUT027 and has high price (ITEM_MRP) pushes the prediction to a higher sales with Linear Regression model and Random Forest. With Linear Regression also with the outlet is medium size increase the sales.
+
+For low sales, we can see if the outlet is Grocery Store and has low Item_MRP push the sales to low values. With Linear Regression with outlet is OUT019 decrease the sales and with Random Forest sell frozen foods decrease sales.
+
 ## Recommendations:
 
 Compare the performance of models based on R2:
