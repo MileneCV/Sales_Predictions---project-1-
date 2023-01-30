@@ -66,7 +66,7 @@ The type of the area in which the store is located is related to better sales. B
 The year in which stores were established is not related to better sales. During the years 1987 until 2007 were established different Supermarket Type 1 and there is no big difference between them.
 
 
-### Coefficients with Linear regression
+## Coefficients with Linear regression
 
 ![sales_predictions](linreg_week17_coeff.png)
 
@@ -96,7 +96,7 @@ Outlet_Identifier_OUT010: Being the Outlet # OUT010 decreases the predicted sale
 Outlet_Establishment_Year_1998: if the store was established in 1998 decreases the predicted sales by 327.368
 
 
-### Features importance with Random forest
+## Features importance with Random forest
 
 ![sales_predictions](rand_forest_important_feature_week17.png)
 
@@ -104,7 +104,7 @@ Outlet_Establishment_Year_1998: if the store was established in 1998 decreases t
 
 Item_MRP (price), Outlet_Type_Grocery Store, Outlet_Identifier_OUT027, Outlet_Type_Supermarket Type3 and Outlet_Establishment_Year_1985 were the most important features used by our model. But we do not know the actual relationship between the feature and the target (Item_Outlest_Sales).
 
-#### Interpreting SHAP - - Random Forest
+### Interpreting SHAP - - Random Forest
 
 ![sales_predictions](week_17_shap_bar.png)
 
