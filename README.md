@@ -66,7 +66,7 @@ The type of the area in which the store is located is related to better sales. B
 The year in which stores were established is not related to better sales. During the years 1987 until 2007 were established different Supermarket Type 1 and there is no big difference between them.
 
 
-### Coefficients with Linear regression
+## Coefficients with Linear regression
 
 ![sales_predictions](linreg_week17_coeff.png)
 
@@ -96,7 +96,7 @@ Outlet_Identifier_OUT010: Being the Outlet # OUT010 decreases the predicted sale
 Outlet_Establishment_Year_1998: if the store was established in 1998 decreases the predicted sales by 327.368
 
 
-### Features importance with Random forest
+## Features importance with Random forest
 
 ![sales_predictions](rand_forest_important_feature_week17.png)
 
@@ -104,7 +104,25 @@ Outlet_Establishment_Year_1998: if the store was established in 1998 decreases t
 
 Item_MRP (price), Outlet_Type_Grocery Store, Outlet_Identifier_OUT027, Outlet_Type_Supermarket Type3 and Outlet_Establishment_Year_1985 were the most important features used by our model. But we do not know the actual relationship between the feature and the target (Item_Outlest_Sales).
 
-#### Interpreting SHAP - - Random Forest
+
+## Local Explanations
+## Force Plot - Linear Regression explanation
+
+![sales_predictions](week_17_force_plot_linreg.png)
+
+## Force Plot - Random Forest explanation
+![sales_predictions](week17_force_plot_rf.png)
+
+### Interpret what features most heavily influenced the predictions
+
+The red features push the prediction to a greater value (higher sales), while the blue features push the prediction to a lower value (lower sales).
+
+We can see if the outlet is supermarket type 3, was established in 1985 and is OUT027 these features push the prediction to a higher sales.
+
+The prediction with random forest was higher than with linear regression.
+
+
+## Interpreting SHAP - - Random Forest
 
 ![sales_predictions](week_17_shap_bar.png)
 
@@ -126,36 +144,20 @@ If it has lower year (blue) that means older outlet increase sales.
 
 
 
-## Local Explanations
-## Force Plot - Linear Regression explanation
-
-![sales_predictions](week_17_force_plot_linreg.png)
-
-## Force Plot - Random Forest explanation
-![sales_predictions](week17_force_plot_rf.png)
-
-### Interpret what features most heavily influenced the predictions
-
-The red features push the prediction to a greater value (higher sales), while the blue features push the prediction to a lower value (lower sales).
-
-We can see if the outlet is supermarket type 3, was established in 1985 and is OUT027 these features push the prediction to a higher sales.
-
-The prediction with random forest was higher than with linear regression.
-
 ## Lime tabular explanation - Linear Regression 
 
 ### high sales
 ![sales_predictions](week17_LIME_high_lnreg.jpg)
 
-### low sales
-![sales_predictions](week17_lime_low_lnreg.jpg)
-
-
 ## Lime tabular explanation - Random Forest 
-
 ### high sales
 ![sales_predictions](week17_lime_high_rf.jpg)
 
+## Lime tabular explanation - Linear Regression
+### low sales
+![sales_predictions](week17_lime_low_lnreg.jpg)
+
+## Lime tabular explanation - Random Forest 
 ### low sales
 ![sales_predictions](week17_lime_low_rf.jpg)
 
