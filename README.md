@@ -195,4 +195,12 @@ The MSE was lower with random forest regression but was too far from the mean ta
 We need repeat this prediction with more features, the machine needs more data to learn and do a good prediction. Maybe we can improve the score with more complex model. 
 
 
+# Tableau Dashboard
+https://public.tableau.com/views/sales_project1_16785572220570/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/112773242/225100597-fac9cc8e-59cd-4efa-93f8-c9d4cae908b5.png">
+
+<img width="739" alt="image" src="https://user-images.githubusercontent.com/112773242/225101885-98090f21-5fd3-4679-8f1f-3ec449555b77.png">
+
+
 
