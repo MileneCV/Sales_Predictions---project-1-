@@ -58,7 +58,7 @@ Supermarket Type1 has higher total sales.
 #### Does Location affect Sales?
 ![sales_predictions](location.png)
 
-The type of the area in which the store is located is related to better sales. Because the Supermarket type 1 which has better sales is located in all tier and at Tier 2 it has higher sales than Tier 1 and Tier 2.
+The type of the area in which the store is located is related to better sales. Because the Supermarket type 1 which has better sales is located in all tier and at Tier 2 it has higher sales than Tier 1 and Tier 3.
 
 #### Does the year in which store was established is related with better sales?
 ![sales_predictions](year_week17.png)
