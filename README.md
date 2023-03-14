@@ -196,8 +196,7 @@ We need repeat this prediction with more features, the machine needs more data t
 
 
 # Tableau Dashboard
-[
-https://public.tableau.com/shared/8CY4KKS9N?:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/sales_project1_16785572220570/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+https://public.tableau.com/views/sales_project1_16785572220570/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
 
 <img width="777" alt="image" src="https://user-images.githubusercontent.com/112773242/225100597-fac9cc8e-59cd-4efa-93f8-c9d4cae908b5.png">
 
