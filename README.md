@@ -63,7 +63,7 @@ The type of area in which the store is located is linked to better sales. Superm
 #### Does the year in which store was established is related with better sales?
 ![sales_predictions](year_week17.png)
 
-The year in which stores were established does not appear to impact sales. Supermarket Type 1 stores were established between 1987 and 2007, and there is no significant difference in sales performance across these years."
+The year in which stores were established does not appear to impact sales. Supermarket Type 1 stores were established between 1987 and 2007, and there is no significant difference in sales performance across these years.
 
 ## Coefficients with Linear regression
 
