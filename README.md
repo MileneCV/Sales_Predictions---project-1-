@@ -26,19 +26,19 @@ Here is the Data Dictionary for this dataset
 #### Machine Learning part: 
 
 - Dropping unnecessary columns.
-- Data preparation: check duplicates, check inconsistencies values, check the type of all columns. 
-- Train/Test split: "Item_Outlet_Sales" column as the target.
-- Make selector columns because there are numbers and objects columns in this dataset.
-- Check missing values: There are missing values in the numeric column Item_Weight which is a float number and there are missing values in the categorical column Outlet_Size. 
+- Data preparation: checked for duplicates, inconsistencies values, and ensured all columns had the correct data types.
+- Train/Test split: Set the "Item_Outlet_Sales" column as the target variable.
+- Created a selector columns to handle both numerical and categorical columns, as this dataset contains both.
+- Checked missing values: Addressed missing values in the numeric column "Item_Weight" (a float) and in the categorical column "Outlet_Size."
 - Used OHE for categorical columns. 
-- Made a numeric_pipe and categorical_pipe with make_pipeline. 
-- Created tuples for numeric and categorical where the first element is the transformer and the second element is a ColumnSelector object
-- Used make_column_transform to put all together (numeric and categorical tuples)
-- Used 3 Models:  Linear regression, Decision Tree Regressor, and Randon Forest 
-- Extracteand and plot the coefficients that Linear regression determined.
-- Extracteand and plot the feature importances that Decision Tree Regressor, and Randon Forest determined. 
+- Pipeline creation: Built separate pipelines for numerical and categorical columns using make_pipeline.
+- Created tuples for numeric and categorical columns, where the first element was the transformer and the second element was the ColumnSelector object
+- Used make_column_transform to combine the numeric and categorical tuples
+- Applied 3 Models:  Linear regression, Decision Tree Regressor, and Randon Forest 
+- Extracted and and plotted the coefficients determined by Linear Regression.
+- Extracted and and plotted the feature importances determined by the Decision Tree Regressor and Random Forest models.
 - Evaluated the performance of 3 models based on r^2 and used regression metrics (MAE, MSE, RMSE).
-- Compared 3 different models. 
+- Compared the performance of the three models.
 
 
 ## Results
